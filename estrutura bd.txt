@@ -9,7 +9,7 @@ telefone
 
 funcionario
 
-id
+id_funci
 nome
 funcao
 
@@ -30,3 +30,10 @@ idfuncionario
 idquarto
 dataentrada
 datasaida
+
+usuario
+
+id_funci_fk
+usuario
+senha
+nivel
