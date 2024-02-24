@@ -2,29 +2,24 @@
 @section ('content')
 
 <section class="container">
-<form class="row g-3">
-  <div class="col-md-6">
-    <label for="inputEmail4" class="form-label">E-mail</label>
-    <input type="email" class="form-control" id="inputEmail4">
+<form class="row g-3" method="POST" action="{{route('envia-banco-cliente')}}">
+@csrf
+<div class="col-md-12">
+    <label for="InputNome" class="form-label">Nome</label>
+    <input type="text" class="form-control" id="inputNome" name="nome" required placeholder="Seu nome">
   </div>
-  <div class="col-md-6">
-    <label for="inputPassword4" class="form-label">Nome</label>
-    <input type="password" class="form-control" id="inputPassword4">
+  <div class="col-md-12">
+    <label for="inputEmail" class="form-label">E-mail</label>
+    <input type="email" class="form-control" id="inputEmail" name="email" required placeholder="seuemail@algumemail.com">
   </div>
-  <div class="col-12">
-    <label for="inputAddress" class="form-label">Telefone</label>
-    <input type="tel" class="form-control" id="inputAddress" required placeholder="(xx) xxxxx-xxxx">
-  </div>
-  <div class="col-12">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Check me out
-      </label>
-    </div>
+  <div class="col-2">
+    <label for="inputFone" class="form-label">Telefone</label>
+    <input type="tel" class="form-control" id="inputFone" name="fone" required placeholder="(xx) xxxxx-xxxx">
   </div>
   <div class="col-12">
-    <button type="submit" class="btn btn-primary">Sign in</button>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
   </div>
 </form>
 </section>
