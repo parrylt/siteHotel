@@ -27,4 +27,8 @@ class ClienteController extends Controller
         return view ("home");
     }
 
+    public function gerenciarCliente (Request $request){
+        return view ("gerenciarCliente");
+    }
+
 }

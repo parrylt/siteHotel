@@ -25,4 +25,8 @@ class FuncionarioController extends Controller
         funcionario::create($dadosValidos);
         return view ("home");
     }
+
+    public function gerenciarFunci (Request $request){
+        return view ("gerenciarFunci");
+    }
 }

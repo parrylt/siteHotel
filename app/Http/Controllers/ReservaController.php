@@ -30,4 +30,8 @@ class ReservaController extends Controller
         reserva::create($dadosValidos);
         return view ("home");
     }
+
+    public function gerenciarReserva (Request $request){
+        return view ("gerenciarReserva");
+    }
 }

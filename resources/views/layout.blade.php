@@ -31,10 +31,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="{{'/cadastroCliente'}}">Cadastrar</a></li>
-            <li><a class="dropdown-item" href="#">Pesquisar</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Deletar</a></li>
-            <li><a class="dropdown-item" href="#">Alterar</a></li>
+            <li><a class="dropdown-item" href="{{'/gerenciarCliente'}}">Gerenciar</a></li>
           </ul>
         </li>
 
@@ -44,10 +41,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="{{'/cadastroFuncionarios'}}">Cadastrar</a></li>
-            <li><a class="dropdown-item" href="#">Pesquisar</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Deletar</a></li>
-            <li><a class="dropdown-item" href="#">Alterar</a></li>
+            <li><a class="dropdown-item" href="{{'/gerenciarFunci'}}">Gerenciar</a></li>
           </ul>
         </li>
 
@@ -57,10 +51,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="{{'/cadastroQuarto'}}">Cadastrar</a></li>
-            <li><a class="dropdown-item" href="#">Pesquisar</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Deletar</a></li>
-            <li><a class="dropdown-item" href="#">Alterar</a></li>
+            <li><a class="dropdown-item" href="{{'/gerenciarQuarto'}}">Gerenciar</a></li>
           </ul>
         </li>
 
@@ -70,10 +61,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="{{'/cadastroReserva'}}">Cadastrar</a></li>
-            <li><a class="dropdown-item" href="#">Pesquisar</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Deletar</a></li>
-            <li><a class="dropdown-item" href="#">Alterar</a></li>
+            <li><a class="dropdown-item" href="#">Gerenciar</a></li>
           </ul>
         </li>
         
