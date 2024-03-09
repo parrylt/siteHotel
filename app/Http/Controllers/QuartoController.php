@@ -17,12 +17,13 @@ class QuartoController extends Controller
     }
 
     public function cadQuarto (Request $request){
+       
         $dadosValidos = $request-> validate([
             'numero' => 'integer|required', 
             'tipo' => 'string|required',
-            'valor' => 'decimal:8,2|required'
+            'valor' => 'numeric|required'
         ]);
-
+       
         quarto::create($dadosValidos);
         return view ("home");
     }

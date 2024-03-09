@@ -18,8 +18,28 @@
     <input type="text" class="form-control" id="inputnomefuncionario" name="nomefuncionario" readonly>
   </div>
   <div class="col-md-6">
-    <label for="inputIDquarto" class="form-label">ID do Quarto:</label>
-    <input type="number" class="form-control" id="inputIDquarto" name="idquarto">
+    <label for="inputIDquarto" class="form-label">Número do Quarto:</label>
+    <input type="number" class="form-control" id="inputIDquarto" name="numeroquarto">
+  </div>
+  <div class="col-md-6">
+    <label for="inputIDquarto" class="form-label">Tipo do Quarto:</label>
+    <input type="text" class="form-control" id="inputValorDiaria" name="tipoquarto">
+  </div>
+  <div class="col-md-6">
+    <label for="inputIDquarto" class="form-label">Valor da Diária:</label>
+    <input type="number" class="form-control" id="inputvalorDoquarto" name="valordiaria">
+  </div>
+  <div class="col-md-6">
+    <label for="inputdataEntrada" class="form-label">Data de Entrada:</label>
+    <input type="date" class="form-control" id="inputdataEntrada" name="dataentrada">
+  </div>
+  <div class="col-md-6">
+    <label for="inputdataSaida" class="form-label">Data de Saída:</label>
+    <input type="date" class="form-control" id="inputdataSaida" name="datasaida">
+  </div>
+  <div class="col-md-6">
+    <label for="inputvalorTotal" class="form-label">Valor Total:</label>
+    <input type="number" min="1" class="form-control" id="inputvalorTotal" name="valortotal">
   </div>
   <div class="col-md-4">
     <label for="inputState" class="form-label">Situação</label>
@@ -28,18 +48,6 @@
       <option>Pago</option>
       <option>Pendente</option>
     </select>
-  </div>
-  <div class="col-md-6">
-    <label for="inputdataEntrada" class="form-label">Data de Entrada:</label>
-    <input type="date" class="form-control" id="inputdataEntrada" name="dataEntrada">
-  </div>
-  <div class="col-md-6">
-    <label for="inputdataSaida" class="form-label">Data de Saída:</label>
-    <input type="date" class="form-control" id="inputdataSaida" name="dataSaida">
-  </div>
-  <div class="col-md-6">
-    <label for="inputvalorTotal" class="form-label">Valor Total:</label>
-    <input type="number" min="1" class="form-control" id="inputvalorTotal" name="valorTotal">
   </div>
   <div class="col-12">
     <button type="submit" class="btn btn-primary">Cadastrar</button>

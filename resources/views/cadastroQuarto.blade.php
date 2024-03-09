@@ -6,11 +6,11 @@
 @csrf
   <div class="col-md-6">
     <label for="inputNumero" class="form-label">Número</label>
-    <input type="number" class="form-control" id="inputNumero" name="numero">
+    <input type="number" class="form-control" id="inputNumero" name="numeroQuarto">
   </div>
   <div class="col-md-4">
     <label for="inputState" class="form-label">Tipo</label>
-    <select id="inputState" class="form-select" name="tipo">
+    <select id="inputState" class="form-select" name="tipoQuarto">
       <option selected disabled></option>
       <option value ="Classe A">Classe A</option>
       <option value ="Comercial">Comercial</option>
@@ -19,7 +19,7 @@
   </div>
   <div class="col-md-6">
     <label for="inputValor" class="form-label">Valor</label>
-    <input type="number" min="1" step="any" class="form-control" id="inputValor" name="valor">
+    <input type="number" min="1" step="any" class="form-control" id="inputValor" name="valorDiaria">
   </div>
   <div class="col-12">
     <button type="submit" class="btn btn-primary">Cadastrar</button>
