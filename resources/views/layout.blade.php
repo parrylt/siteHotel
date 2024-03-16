@@ -61,7 +61,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="{{'/cadastroReserva'}}">Cadastrar</a></li>
-            <li><a class="dropdown-item" href="#">Gerenciar</a></li>
+            <li><a class="dropdown-item" href="{{'/gerenciarReserva'}}">Gerenciar</a></li>
           </ul>
         </li>
         

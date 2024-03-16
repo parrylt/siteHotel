@@ -21,9 +21,14 @@
     <label for="inputIDquarto" class="form-label">Número do Quarto:</label>
     <input type="number" class="form-control" id="inputIDquarto" name="numeroquarto">
   </div>
-  <div class="col-md-6">
-    <label for="inputIDquarto" class="form-label">Tipo do Quarto:</label>
-    <input type="text" class="form-control" id="inputValorDiaria" name="tipoquarto">
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">Tipo</label>
+    <select id="inputState" class="form-select" name="tipoquarto">
+      <option selected disabled></option>
+      <option value ="Classe A">Classe A</option>
+      <option value ="Comercial">Comercial</option>
+      <option value ="Suite">Suite</option>
+    </select>
   </div>
   <div class="col-md-6">
     <label for="inputIDquarto" class="form-label">Valor da Diária:</label>

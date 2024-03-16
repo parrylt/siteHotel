@@ -3,7 +3,7 @@
 <section class="container m-5">
   <div class="container m-5">
     <h1 class="text-center">Gerenciar Dados do Cliente</h1>
-    <form >
+    <form method='get' action='{{route("gerenciar-cliente")}}'>
       <div class="row center">
         <div class="col">
           <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite o Nome do Cliente" aria-label="Primeiro Nome">
@@ -25,22 +25,26 @@
       </tr>
     </thead>
     <tbody>
-     
+     @foreach($registrosClientes as $registrosClientesLoop)
       <tr>
-        <th scope="row">01</th>
-        <td>119897-999</td>
-        <td>Samsung</td>
+        <th scope="row">{{$registrosClientesLoop->id}}</th>
+        <td>{{$registrosClientesLoop->nome}}</td>
+        <td>{{$registrosClientesLoop->email}}</td>
         <td>
           <a href="">
-            <button type="button" class="btn btn-primary">X</button>
+            <button type="button" class="btn btn-primary">O</button>
           </a>
         </td>
-        xx
+        
         <td>
-         xxx
+        <form method="post" action='{{route("apaga-cliente", $registrosClientesLoop->id)}}'>
+          @method('delete')
+          @csrf
+          <button type="submit" class="btn btn-danger"> X </button>
+        </form>
         </td>
       </tr>
-   
+  @endforeach
     </tbody>
   </table>
 </section>
