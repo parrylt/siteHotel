@@ -2,8 +2,8 @@
 @section('content')
 <section class="container m-5">
   <div class="container m-5">
-    <h1 class="text-center">Gerenciar Dados do Funcionário</h1>
-    <form >
+    <h1 class="text-center">Gerenciar Dados dos Funcionários</h1>
+    <form method='get' action='{{route("gerenciar-funci")}}'>
       <div class="row center">
         <div class="col">
           <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite o Nome do Funcionário" aria-label="Primeiro Nome">
@@ -25,22 +25,26 @@
       </tr>
     </thead>
     <tbody>
-     
+     @foreach($registrosFuncionarios as $registrosFuncionariosLoop)
       <tr>
-        <th scope="row">01</th>
-        <td>119897-999</td>
-        <td>Samsung</td>
+        <th scope="row">{{$registrosFuncionariosLoop->id}}</th>
+        <td>{{$registrosFuncionariosLoop->nome}}</td>
+        <td>{{$registrosFuncionariosLoop->funcao}}</td>
         <td>
           <a href="">
-            <button type="button" class="btn btn-primary">X</button>
+            <button type="button" class="btn btn-primary">O</button>
           </a>
         </td>
-        xx
+        
         <td>
-         xxx
+        <form method="post" action='{{route("apaga-funci", $registrosFuncionariosLoop->id)}}'>
+          @method('delete')
+          @csrf
+          <button type="submit" class="btn btn-danger"> X </button>
+        </form>
         </td>
       </tr>
-   
+  @endforeach
     </tbody>
   </table>
 </section>
