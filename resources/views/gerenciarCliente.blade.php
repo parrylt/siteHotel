@@ -31,7 +31,7 @@
         <td>{{$registrosClientesLoop->nome}}</td>
         <td>{{$registrosClientesLoop->email}}</td>
         <td>
-          <a href="">
+          <a href="{{route('mostrar-cliente', $registrosClientesLoop->id)}}">
             <button type="button" class="btn btn-primary">O</button>
           </a>
         </td>
