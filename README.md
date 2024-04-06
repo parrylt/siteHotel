@@ -1,3 +1,13 @@
+# Atividade de Laravel no primeiro bimestre de 2024 na Etec de Guarulhos com o professor Sílvio.
+<br>
+<div align="center">
+  <h3>Um site para gerenciar um hote.</h3>
+  <img src="ImagensGit/1.png"> <img src="ImagensGit/2.png"><img src="ImagensGit/3.png"><img src="ImagensGit/4.png"><img src="ImagensGit/5.png"><img src="ImagensGit/6.png"><img src="ImagensGit/7.png"><img src="ImagensGit/8.png"><img src="ImagensGit/9.png">
+    <img src="ImagensGit/10.png">
+</div>
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
