@@ -28,8 +28,8 @@ class QuartoController extends Controller
         return view ("home");
     }
 
-    public function mostrarGerenciarQuarto(Quarto $id){
-        return view ('xxxxx', ['registrosQuartos' => $id]);
+    public function mostrarGerenciarQuartoId(Quarto $id){
+        return view ('formularioAlterarQuarto', ['registrosQuartos' => $id]);
     }
 
     public function gerenciarQuarto (Request $request){

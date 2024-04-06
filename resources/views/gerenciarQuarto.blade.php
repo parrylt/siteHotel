@@ -31,7 +31,7 @@
         <td>{{$registrosQuartosLoop->numeroquarto}}</td>
         <td>{{$registrosQuartosLoop->tipoquarto}}</td>
         <td>
-          <a href="">
+        <a href="{{route('mostrar-quarto', $registrosQuartosLoop->id)}}">
             <button type="button" class="btn btn-primary">O</button>
           </a>
         </td>

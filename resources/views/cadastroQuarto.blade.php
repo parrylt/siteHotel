@@ -6,7 +6,7 @@
 @csrf
   <div class="col-md-6">
     <label for="inputNumero" class="form-label">Número</label>
-    <input type="number" class="form-control" id="inputNumero" name="numeroquarto">
+    <input type="number" min="1" class="form-control" id="inputNumero" name="numeroquarto">
   </div>
   <div class="col-md-4">
     <label for="inputState" class="form-label">Tipo</label>

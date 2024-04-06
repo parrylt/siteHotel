@@ -32,8 +32,8 @@ Route::delete('/apagaCliente{id}', [ClienteController::class, 'destroy'])->name(
 Route::get('/cadastroFuncionarios', [FuncionarioController::class, 'showCadastroFunci'])->name('show-formulario-funci');
 Route::post('/cadastroFuncionarios', [FuncionarioController::class, 'cadFunci'])->name('envia-banco-funci');
 Route::get('/gerenciarFunci', [FuncionarioController::class, 'gerenciarFunci'])->name('gerenciar-funci');
-Route::get('/alterar-funcionario', [FuncionarioController::class, 'mostrarGerenciarFunciId'])->name('mostrar-funci');
-Route::put('/alterar-funcionario{id}', [FuncionarioController::class,'alterarFunciBanco'])->name('alterar-funci');
+Route::get('/alterar-funcionario{id}', [FuncionarioController::class, 'mostrarGerenciarFunciId'])->name('mostrar-funci');
+Route::put('/alterar-funcionario{id}', [FuncionarioController::class,'alterarFunci'])->name('alterar-funci');
 Route::delete('/apagaFuncionario{id}', [FuncionarioController::class, 'destroy'])->name('apaga-funci');
 
 
@@ -42,8 +42,8 @@ Route::delete('/apagaFuncionario{id}', [FuncionarioController::class, 'destroy']
 Route::get('/cadastroQuarto', [QuartoController::class, 'showCadastroQuarto'])->name('show-formulario-quarto');
 Route::post('/cadastroQuarto', [QuartoController::class, 'cadQuarto'])->name('envia-banco-quarto');
 Route::get('/gerenciarQuarto', [QuartoController::class, 'gerenciarQuarto'])->name('gerenciar-quarto');
-Route::get('/alterar-quarto', [QuartoController::class, 'mostrarGerenciarQuartoId'])->name('mostrar-quarto');
-Route::put('/alterar-quarto{id}', [QuartoController::class,'alterarQuartoBanco'])->name('alterar-quarto');
+Route::get('/alterar-quarto{id}', [QuartoController::class, 'mostrarGerenciarQuartoId'])->name('mostrar-quarto');
+Route::put('/alterar-quarto{id}', [QuartoController::class,'alterarQuarto'])->name('alterar-quarto');
 Route::delete('/apagaQuarto{id}', [QuartoController::class, 'destroy'])->name('apaga-quarto');
 
 

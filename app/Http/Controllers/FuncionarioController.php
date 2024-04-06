@@ -26,8 +26,8 @@ class FuncionarioController extends Controller
         return view ("home");
     }
 
-    public function mostrarGerenciarFunci(Funcionario $id){
-        return view ('xxxxx', ['registrosFuncionarios' => $id]);
+    public function mostrarGerenciarFunciId(Funcionario $id){
+        return view ('formularioAlterarFunci', ['registrosFuncionarios' => $id]);
     }
 
     public function gerenciarFunci (Request $request){
@@ -46,7 +46,7 @@ class FuncionarioController extends Controller
         return Redirect::route('home');
     }
 
-    public function alterarFuncionario(Funcionario $id, Request $request){
+    public function alterarFunci(Funcionario $id, Request $request){
         $dadosValidos = $request-> validate([
             'nome' => 'string|required', 
             'funcao' => 'string|required'
